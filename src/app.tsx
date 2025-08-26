@@ -431,7 +431,7 @@ export default function DoTodoApp() {
 
       <footer className="mx-auto max-w-6xl px-4 pb-10 pt-4 text-center text-xs text-slate-500">
         <p>
-          Built for <strong>Do Todo</strong> — stored locally in your browser.
+          <strong>Do Todo</strong> — stored locally in your browser.
         </p>
       </footer>
     </div>
