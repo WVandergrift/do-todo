@@ -306,12 +306,6 @@ export default function DoTodoApp() {
               <p className="text-xs text-white/80">Fast. Local. No sign-in.</p>
             </div>
           </div>
-          <div className="hidden flex-1 items-center justify-center lg:flex">
-            {/* Top banner ad placeholder */}
-            <div className="h-12 w-full max-w-xl rounded-2xl border bg-white/80 p-2 text-center text-sm text-slate-700 shadow-inner">
-              Ad space — 970×90 / responsive
-            </div>
-          </div>
           <div className="flex items-center gap-2">
             <select
               value={sort}
@@ -416,24 +410,8 @@ export default function DoTodoApp() {
         {/* Right column: stats + ads */}
         <aside className="lg:col-span-4 xl:col-span-3">
           <StatsCard todos={todos} now={nowTick} />
-
-          {/* Ad blocks */}
-          <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-1">
-            <div className="h-40 rounded-2xl border bg-gradient-to-r from-indigo-100 to-pink-100 p-3 text-center text-sm text-slate-700 shadow-inner">
-              Ad space — 300×250
-            </div>
-            <div className="h-40 rounded-2xl border bg-gradient-to-r from-yellow-100 to-green-100 p-3 text-center text-sm text-slate-700 shadow-inner">
-              Ad space — 300×250
-            </div>
-          </div>
         </aside>
       </main>
-
-      <footer className="mx-auto max-w-6xl px-4 pb-10 pt-4 text-center text-xs text-slate-500">
-        <p>
-          <strong>Do Todo</strong> — stored locally in your browser.
-        </p>
-      </footer>
     </div>
   );
 }
